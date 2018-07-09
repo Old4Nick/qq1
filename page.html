@@ -1,21 +1,85 @@
 ﻿<!DOCTYPE html>
 <html>
-
   <head>
     <title>Test page</title>
     <link rel="stylesheet" href="wijmo.css">
     <script src="wijmo.min.js"></script>
     <script src="wijmo.gauge.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
+    <script src="wijmo.grid.min.js"></script>
+    <script src="wijmo.angular.min.js"></script>
+    <script src="wijmo.input.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"> </head>
 
   <body>
     <p>Guages</p>
-    <div id="theGrid" class="container"></div>
     <div id="theLinearGauge" class="gauge"></div>
     <div id="theRadialGauge" class="gauge"></div>
     <div id="theBulletGraph" class="gauge"></div>
+    <p>Grid</p>
+    <div class="Container">
+      <div id="theGrid">
+      </div>
+      <label for="btnShow">Show</label>
+      <button id="btnShow" class="btn btn-primary">Show Popup</button>
+      <br/>
+      <br/>
+      <div class="row">
+    
+        <div class="col-xs-6">
+    
+          <!-- important options -->
+          <label for="type">Type</label>
+          <div id="type"></div>
+          <br/>
+          <label for="header">Header</label>
+          <input id="header">
+          <br/>
+          <label for="body">Body</label>
+          <input id="body">
+          <br/>
+          <label for="defVal">Default Value</label>
+          <input id="defVal">
+          <br/>
+          <label for="small">Small</label>
+          <input id="small" type="checkbox">
+          <br/>
+          <label for="ok">OK Text</label>
+          <input id="ok">
+          <br/>
+          <label for="cancel">Cancel Text</label>
+          <input id="cancel">
+          <br/>
+        </div>
+    
+        <div class="col-xs-6">
+    
+          <!-- details -->
+          <label for="clsDialog">Dialog Class</label>
+          <input id="clsDialog">
+          <br/>
+          <label for="clsHeader">Header Class</label>
+          <input id="clsHeader">
+          <br/>
+          <label for="clsBody">Body Class</label>
+          <input id="clsBody">
+          <br/>
+          <label for="clsInput">Input Class</label>
+          <input id="clsInput">
+          <br/>
+          <label for="clsFooter">Body Class</label>
+          <input id="clsFooter">
+          <br/>
+          <label for="clsOK">OK Class</label>
+          <input id="clsOK">
+          <br/>
+          <label for="clsCancel">Cancel Class</label>
+          <input id="clsCancel">
+          <br/>
+        </div>
+      </div>
+    </div>
     <script src="script.js"></script>
+
   </body>
 
 </html>

@@ -34,3 +34,13 @@ p {
 body {
   margin-bottom: 20px;
 }
+label {
+  width: 90px;
+  text-align: right;
+  margin-right: 6px;
+}
+
+.wj-combobox {
+  width: 140px;
+  margin-bottom: 6px;
+}
